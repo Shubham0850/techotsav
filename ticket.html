@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/image/logo.png">
+    <title>Ticket</title>
+</head>
+<body>
+    <!-- particles.js container -->
+    <canvas></canvas>
+    <canvas></canvas>
+     <!-- Main Container -->
+     <div class="main">
+        <!-- Nav bar -->
+        <div class="nav">
+            <div class="logo">
+                <img src="/image/logo.png" alt="logo" width="40px">
+            </div>
+             <!-- Menu For Mobile Phone Design-->
+            <div class="menu">
+                <img src="/image/menuw.png" alt="menu" width="40px" class="men" onclick="myFunction()" id="men">
+                <div class="dpcontent" id="dpc">
+                    <ul>
+                        <li><a href="./pages/ticket.html"><img src="/image/tic1.png" alt="ticket" width="80px"></a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutevent.html">About Event</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                        <li><a href="member.html">Membership Form</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <!-- Menu For Laptop Design -->
+            <div class="items">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutevent.html"> About Event</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="ticket.html"><img src="/image/tic1.png" alt="ticket" width="60px"></a></li>
+                </ul>
+            </div>
+        </div>
+        <h1><center>Ti<span>ck</span>et</center></h1>
+        <div class="ticket">
+            <div class="pricing">
+                <h3><center>Pricing</center></h3>
+                <div class="single">
+                    <code>Single   Rs:-500</code>
+                </div>
+                <div class="single">
+                    <code>Couple   Rs:-1000</code>
+                </div>
+                <div class="single">
+                    <code>Group   Rs:-2000</code>
+                </div>
+                <code><center><span>Book now and get 50% off</span></center></code>
+            </div>
+            <form action="" method="POST" onsubmit="submit.html">
+                <div class="inputfield">
+                    <label for="fname"><code>Techotsav Id</code></label>
+                    <input type="text" id="name" name="entry.2005620554" required>
+                </div>
+                <div class="inputfield">
+                    <label for="number"><code>Password</code></label>
+                    <input type="password" name="entry.1166974658" required>
+                </div>
+                <div class="inputfield">
+                    <label for="tictype"><code>Ticket Type</code></label>
+                    <div class="custumselect">
+                        <select name="associate" id="associate">
+                            <option value="male">Single</option>
+                            <option value="male">Couple</option>
+                            <option value="male">Group</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputfield">
+                    <label for="ticno"><code>Number Of Ticket</code></label>
+                    <div class="custumselect">
+                        <select name="associate" id="associate">
+                            <option value="male" >One</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputfield">
+                    <label for="eventname"><code>Event Name</code></label>
+                    <div class="custumselect">
+                        <select name="associate" id="associate">
+                            <option value="male">Techotsav</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="btn">
+                    <a href="myticket.html"><button>Buy Now</button></a>
+                </div>
+            </form>
+        </div>
+
+    <script src="script.js">
+        function myFunction(){
+  document.getElementById("dpc").classList.toggle("show");
+}
+    </script>
+</body>
+</html>
